@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    video {
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      max-width: 90%;
+    }
+
+    .download-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 20px;
+      background: #4a4aff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #6a6aff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sleeping Fox Video</h1>
+  <video width="640" controls>
+    <source src="sleeping_fox.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <a class="download-btn" href="sleeping_fox.mp4" download>Download Video</a>
+</body>
+</html>
